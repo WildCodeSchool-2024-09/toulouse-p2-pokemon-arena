@@ -1,0 +1,110 @@
+#winner-page {
+  padding: 30px;
+  overflow: hidden;
+  user-select: none;
+}
+
+#champion-title {
+  font-family: var(--font-family-h1);
+  font-size: var(--font-size-h1);
+  font-weight: 100;
+  padding: 0px 40px 40px 40px;
+  color: white;
+  text-align: center;
+}
+
+.winner-card-container {
+  display: flex;
+  justify-content: center;
+  animation: hithere 2s ease 2;
+  perspective: 1000px;
+}
+
+@keyframes hithere {
+  30% {
+    transform: scale(1.1);
+  }
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.1);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.winner-button-nav {
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #3b2d69;
+  font-family: var(--font-family-button);
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: solid 3px #644eae;
+  transition: transform 0.1s ease;
+}
+
+#winner-nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.winner-image-button {
+  height: 20px;
+}
+
+.winner-button-nav:hover {
+  background-color: #b3aace;
+  color: #3b2d69;
+  cursor: pointer;
+}
+
+.winner-button-nav:active {
+  transform: scale(0.95);
+  border: solid 3px white;
+}
+
+.winner-button-nav:hover .winner-image-button {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(27%) saturate(1166%)
+    hue-rotate(225deg) brightness(94%) contrast(91%);
+}
+
+@media screen and (min-width: 767px) {
+  .winner-nav {
+    justify-content: center;
+  }
+
+  .winner-button-nav {
+    font-size: 56px;
+    justify-content: center;
+  }
+
+  .winner-image-button {
+    height: 48px;
+  }
+
+  #winner-nav {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.card {
+  height: 100%;
+  border-radius: 15px;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  display: flex;
+  justify-content: center;
+}

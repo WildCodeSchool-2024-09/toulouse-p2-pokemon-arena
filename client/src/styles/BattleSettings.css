@@ -1,0 +1,204 @@
+#battle-settings-title {
+  font-family: var(--font-family-h1);
+  font-size: var(--font-size-h1);
+  font-weight: 100;
+  text-align: center;
+}
+
+.return-button-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.return-home-icon {
+  align-items: flex-start;
+}
+
+#battle-settings-text {
+  font-family: var(--font-family-p);
+  font-size: var(--font-size-p);
+  text-align: justify;
+}
+
+#battle-settings-text span {
+  font-weight: 600;
+}
+
+#battle-settings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  color: var(--color-font);
+  padding: 30px;
+}
+
+#settings-ajustments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#settings-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.battle-filter-img-button {
+  width: 12px;
+}
+
+.battle-filter-img-button path {
+  fill: white !important;
+}
+
+#battle-settings-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.battle-filters-button {
+  border-radius: 50px;
+  background-color: #4d3a8c;
+  border: 1.5px solid white;
+  padding: 5px 10px;
+  font-family: var(--font-family-p);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-font);
+  align-self: flex-end;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.battle-filters-button:active {
+  background-color: #b3aace;
+}
+
+.go-to-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.go-to-button {
+  width: 302px;
+  height: 121px;
+  background: #3b2d69;
+  border-radius: 20px;
+  color: white;
+  font-family: var(--font-family-button);
+  font-size: var(--font-size-button);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 15px;
+  cursor: pointer;
+  border: solid 3px #644eae;
+  transition: transform 0.1s ease;
+}
+
+.go-to-button:hover {
+  background-color: #b3aace;
+  color: #3b2d69;
+  .img-button {
+    background-color: #b3aace;
+  }
+}
+.go-to-button:active {
+  transform: scale(0.95);
+  border: solid 3px white;
+}
+
+.img-button {
+  width: 100px;
+  height: 100px;
+  background: #3b2d69;
+}
+
+.battle-setting-filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.battle-settings-filter-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 850px) {
+  #battle-settings-page {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: var(--color-font);
+    padding: 30px 70px;
+  }
+
+  #settings-ajustments {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: baseline;
+  }
+
+  .battle-settings-filter-button-container {
+    justify-content: flex-start;
+  }
+
+  .battle-slider {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  #settings-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
+  .battle-filters-button {
+    border-radius: 50px;
+    background-color: #4d3a8c;
+    border: 2px solid #644eae;
+    padding: 5px 15px;
+    font-family: var(--font-family-p);
+    font-size: var(--font-size-p);
+    font-weight: 500;
+    color: var(--color-font);
+    align-self: flex-end;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+
+  .go-to-button-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 30px;
+  }
+
+  .go-to-button {
+    width: 302px;
+    height: 121px;
+    background: #3b2d69;
+    border-radius: 20px;
+    color: white;
+    font-family: var(--font-family-button);
+    font-size: var(--font-size-button);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 15px;
+    cursor: pointer;
+    border: solid 3px #644eae;
+  }
+}

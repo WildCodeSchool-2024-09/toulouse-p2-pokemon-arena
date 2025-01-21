@@ -1,0 +1,34 @@
+.next-round-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 100vh;
+  user-select: none;
+}
+.next-round-button {
+  width: 302px;
+  height: 121px;
+  background: #3b2d69;
+  border-radius: 20px;
+  color: white;
+  font-family: var(--font-family-button);
+  font-size: var(--font-size-button);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  border: solid 3px #644eae;
+  transition: transform 0.1s ease;
+}
+
+.next-round-button:hover {
+  background-color: #b3aace;
+  color: #3b2d69;
+}
+
+.next-round-button:active {
+  transform: scale(0.95);
+  border: solid 3px white;
+}
